@@ -1,0 +1,9 @@
+n=int(input('enter a number'))
+length=len(str(n))
+sum=0
+for i in str(n):
+    sum=sum+(int(i)**length)
+if sum==n:
+    print('it is armstrong number')
+else:
+    print('not an armstrong number')
