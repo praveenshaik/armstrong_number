@@ -1,0 +1,22 @@
+# printing prime numbers in a given range:
+# init_range=int(input('enter a number'))
+# final_range=int(input('enter a number'))
+# for num in range(init_range,final_range+1):
+#     sum=0
+#     for i in range(1,num+1):
+#         if num%i==0:
+#             sum=sum+1
+#     if sum==2:
+#         print(num)
+
+
+init_range=int(input('enter a number'))
+final_range=int(input('enter a number'))
+for num in range(init_range,final_range):
+    length=len(str(num))
+    sum=0
+    for i in str(num):
+        sum=sum+(int(i)**length)
+    if sum==num:
+        print(num)
+
